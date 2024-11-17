@@ -8,25 +8,33 @@
 // 
 
 window.addEventListener('DOMContentLoaded', event => {
-
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
+        const logoLight = document.querySelector('.logo-light');
+        const logoDark = document.querySelector('.logo-dark');
+
         if (!navbarCollapsible) {
             return;
         }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
 
+        if (window.scrollY === 0) {
+            navbarCollapsible.classList.remove('navbar-shrink');
+            // Show light logo, hide dark logo
+            logoLight.classList.remove('d-none');
+            logoDark.classList.add('d-none');
+        } else {
+            navbarCollapsible.classList.add('navbar-shrink');
+            // Show dark logo, hide light logo
+            logoLight.classList.add('d-none');
+            logoDark.classList.remove('d-none');
+        }
     };
 
-    // Shrink the navbar 
+    // Shrink the navbar
     navbarShrink();
 
-    // Shrink the navbar when page is scrolled
+    // Shrink the navbar and toggle logos when page is scrolled
     document.addEventListener('scroll', navbarShrink);
 
     // Activate Bootstrap scrollspy on the main nav element
@@ -36,7 +44,7 @@ window.addEventListener('DOMContentLoaded', event => {
             target: '#mainNav',
             rootMargin: '0px 0px -40%',
         });
-    };
+    }
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
@@ -50,5 +58,4 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-
 });
