@@ -11126,7 +11126,7 @@ body {
 }
 
 .about-section {
-  padding-top: 11rem;
+  padding-top: 10rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
@@ -11182,7 +11182,7 @@ body {
 }
 
 .contact-section {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 .contact-section .card {
   border: 0;
