@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', event => {
             return;
         }
 
-        if (window.scrollY < 5) {
+        if (window.scrollY <= 1) {
             navbarCollapsible.classList.remove('navbar-shrink');
             // Show light logo, hide dark logo
             logoLight.classList.remove('d-none');
