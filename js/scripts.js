@@ -63,4 +63,25 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+
+    const links = document.querySelectorAll('a[href^="#"]');
+    const navbarHeight = document.querySelector('#mainNav').offsetHeight; // Get navbar height
+
+    links.forEach(link => {
+        link.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                e.preventDefault(); // Prevent default anchor behavior
+
+                // Scroll to the target with offset for navbar
+                const targetPosition = targetElement.offsetTop - navbarHeight;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth',
+                });
+            }
+        });
+    });
 });
