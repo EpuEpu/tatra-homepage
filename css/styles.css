@@ -11145,11 +11145,11 @@ body {
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #8F00CA;
+    border-left: 0.1rem solid #8F00CA;
   }
   .projects-section .featured-text-right {
     padding: 0 2rem 0 0;
-    border-right: 0.5rem solid #8F00CA; 
+    border-right: 0.1rem solid #8F00CA; 
   }
 }
 .projects-section .project-text {
