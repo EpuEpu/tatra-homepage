@@ -18,16 +18,21 @@ window.addEventListener('DOMContentLoaded', event => {
             return;
         }
 
-        if (window.scrollY <= 1) {
-            navbarCollapsible.classList.remove('navbar-shrink');
-            // Show light logo, hide dark logo
-            logoLight.classList.remove('d-none');
-            logoDark.classList.add('d-none');
-        } else {
+        if (window.innerWidth < 992) {
             navbarCollapsible.classList.add('navbar-shrink');
-            // Show dark logo, hide light logo
-            logoLight.classList.add('d-none');
-            logoDark.classList.remove('d-none');
+            logoLight.classList.add('d-none'); // Hide light logo
+            logoDark.classList.remove('d-none'); // Show dark logo
+        } else {
+            // On larger screens, toggle navbar shrink and logo based on scroll
+            if (window.scrollY === 0) {
+                navbarCollapsible.classList.remove('navbar-shrink');
+                logoLight.classList.remove('d-none');
+                logoDark.classList.add('d-none');
+            } else {
+                navbarCollapsible.classList.add('navbar-shrink');
+                logoLight.classList.add('d-none');
+                logoDark.classList.remove('d-none');
+            }
         }
     };
 
