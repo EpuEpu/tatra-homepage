@@ -20,8 +20,8 @@ window.addEventListener('DOMContentLoaded', event => {
 
         if (window.innerWidth < 992) {
             navbarCollapsible.classList.add('navbar-shrink');
-            logoLight.classList.add('d-none'); // Hide light logo
-            logoDark.classList.remove('d-none'); // Show dark logo
+            logoLight.classList.add('d-none');
+            logoDark.classList.remove('d-none');
         } else {
             // On larger screens, toggle navbar shrink and logo based on scroll
             if (window.scrollY === 0) {
