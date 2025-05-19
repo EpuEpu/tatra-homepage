@@ -11203,3 +11203,145 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+:root {
+    --background: #080808;
+    --accent-green: #ddfc76;
+    --accent-purple: #9576fc;
+    --text-primary: rgba(255, 255, 255, 0.9);
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --garet-font: 'Space Grotesk', sans-serif;
+    --telegraf-font: 'DM Sans', sans-serif;
+}
+
+/* Base setup using your design system */
+body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family: var(--telegraf-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--garet-font);
+    color: var(--text-primary);
+}
+
+/* Override Bootstrap bg/text classes used */
+.bg-black,
+.bg-light,
+.bg-dark,
+.bg-white {
+    background-color: var(--background) !important;
+}
+
+.text-white,
+.text-black,
+.text-white-50,
+.text-black-50 {
+    color: var(--text-primary) !important;
+}
+
+.text-white-80 {
+    color: var(--text-secondary) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--accent-purple);
+    border-color: var(--accent-purple);
+    color: #000;
+    font-family: var(--garet-font);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-green);
+    border-color: var(--accent-green);
+    color: #000;
+}
+
+/* Section Headings */
+.about-section h2,
+.projects-section h2,
+.contact-section h2 {
+    color: var(--accent-green);
+}
+
+/* Featured text blocks */
+.featured-text,
+.featured-text-right {
+    color: var(--text-secondary);
+}
+
+/* Footer styling (reused from earlier) */
+.footer-custom {
+    background-color: var(--background);
+    padding: 1rem 0;
+    font-family: var(--telegraf-font);
+}
+
+.footer-text {
+    color: var(--text-secondary);
+}
+
+.footer-link {
+    color: var(--accent-purple);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--accent-green);
+    text-decoration: underline;
+}
+
+.legal-page {
+  max-width: 800px;
+  margin: auto;
+  color: var(--text-primary);
+  font-family: var(--telegraf-font);
+}
+
+.page-title {
+  color: var(--accent-green);
+  font-family: var(--garet-font);
+  margin-bottom: 1.5rem;
+}
+
+.page-text {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.privacy-page {
+  max-width: 800px;
+  margin: auto;
+  color: var(--text-primary);
+  font-family: var(--telegraf-font);
+}
+
+.page-title {
+  color: var(--accent-green);
+  font-family: var(--garet-font);
+  margin-bottom: 0.5rem;
+}
+
+.page-date {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.privacy-page h2 {
+  margin-top: 2rem;
+  color: var(--accent-purple);
+}
+
+.privacy-page a {
+  color: var(--accent-purple);
+  text-decoration: underline;
+}
+
+.privacy-page a:hover {
+  color: var(--accent-green);
+}
