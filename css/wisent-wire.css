@@ -526,6 +526,7 @@
     cursor: pointer;
     margin-left: 12px;
     transition: color 0.18s;
+    background: red !important;
 }
 
 @media (max-width: 900px) {
@@ -572,3 +573,4 @@
         display: block;
     }
 }
+

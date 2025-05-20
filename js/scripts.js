@@ -71,7 +71,8 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
     const links = document.querySelectorAll('a[href^="#"]');
-    const navbarHeight = document.querySelector('#mainNav').offsetHeight; // Get navbar height
+const navbar = document.querySelector('.wisent-navbar');
+const navbarHeight = navbar ? navbar.offsetHeight : 0;
     links.forEach(link => {
         link.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href').substring(1);
