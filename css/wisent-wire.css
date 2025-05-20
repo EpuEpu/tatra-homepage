@@ -479,7 +479,7 @@
     height: 52px;
 }
 .wisent-navbar-logo-img {
-    height: 44px;
+    height: 80px !important;
     width: auto;
     display: block;
 }
