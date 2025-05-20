@@ -52,17 +52,23 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
     // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
+    const navbarToggler = document.querySelector('.wisent-navbar-toggle');
+    const navbarLinks = document.getElementById('navbarLinks');
+    const navLinks = navbarLinks.querySelectorAll('.wisent-navbar-link');
+
+    navbarToggler.addEventListener('click', () => {
+        navbarLinks.classList.toggle('open');
+    });
+
+    // Close menu when a link is clicked (on mobile)
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
+                navbarLinks.classList.remove('open');
             }
         });
     });
+
 
     const links = document.querySelectorAll('a[href^="#"]');
     const navbarHeight = document.querySelector('#mainNav').offsetHeight; // Get navbar height
