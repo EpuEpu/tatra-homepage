@@ -11198,3 +11198,119 @@ h1, h2, h3, h4, h5, h6 {
 h2, h3, h4 {
   scroll-margin-top: 4rem;
 }
+
+
+.team-section-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 16px 0 16px;
+}
+
+.team-section-title {
+    color: var(--text-primary);
+    font-family: var(--garet-font);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 48px;
+    letter-spacing: 0.03em;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 44px;
+    justify-items: center;
+    align-items: start;
+    margin-bottom: 32px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-avatar {
+    text-align: center;
+    max-width: 170px;
+}
+
+.team-avatar .rounded-circle,
+.team-more-avatar {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 2px 12px 0 rgba(221,252,118,0.08);
+    background: #161616;
+}
+
+.team-more-avatar {
+    background: var(--accent-green);
+    color: #171717;
+    font-family: var(--garet-font);
+    font-weight: 700;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    min-width: 130px;
+    min-height: 130px;
+    box-shadow: 0 3px 18px 0 rgba(221,252,118,0.10);
+    transition: background 0.18s;
+}
+
+.team-avatar .mt-3 {
+    margin-top: 18px;
+}
+.team-avatar .text-xl {
+    font-size: 1.09rem;
+    color: var(--text-primary);
+    font-family: var(--garet-font);
+    font-weight: 500;
+}
+.team-avatar .text-sm {
+    font-size: 0.88rem;
+    letter-spacing: 0.08em;
+    color: var(--text-secondary);
+    font-family: var(--telegraf-font);
+    opacity: 0.78;
+}
+.team-avatar .text-uppercase {
+    text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        max-width: 720px;
+    }
+}
+@media (max-width: 700px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        max-width: 98vw;
+    }
+    .team-section-container {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .team-avatar .rounded-circle,
+    .team-more-avatar {
+        width: 92px;
+        height: 92px;
+        font-size: 1.4rem;
+        min-width: 92px;
+        min-height: 92px;
+    }
+    .team-avatar {
+        max-width: 110px;
+    }
+    .team-section-title {
+        font-size: 1.36rem;
+        margin-bottom: 32px;
+    }
+}

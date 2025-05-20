@@ -21,9 +21,10 @@
     <nav class="wisent-navbar">
         <div class="wisent-navbar-inner">
             <a href="/" class="wisent-navbar-logo-link">
-                <img src="/assets/img/output_white_image.png" alt="TatraSpace Logo" class="wisent-navbar-logo-img" />
+                <img src="/assets/img/TatraSpace_logo.png" alt="TatraSpace Logo" class="wisent-navbar-logo-img" />
             </a>
-            <button class="wisent-navbar-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.wisent-navbar-links').classList.toggle('open')">
+            <button class="wisent-navbar-toggle" aria-label="Toggle navigation"
+                onclick="document.querySelector('.wisent-navbar-links').classList.toggle('open')">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="wisent-navbar-links">
@@ -69,16 +70,19 @@
                     <h2 class="text-white mb-4">Our clients</h2>
                     <div class="row gx-5 gy-5 justify-content-center">
                         <div class="col-6 col-md-3 text-center">
-                            <img src="assets/img/REVOLV_logo_dark_mode.png" alt="revolv" class="img-fluid mb-5" title="Revolv Space">
+                            <img src="assets/img/REVOLV_logo_dark_mode.png" alt="revolv" class="img-fluid mb-5"
+                                title="Revolv Space">
                         </div>
                         <div class="col-6 col-md-3 text-center">
                             <img src="assets/img/MukeLogo.jpeg" alt="muke" class="img-fluid mb-5" title="Muke">
                         </div>
                         <div class="col-6 col-md-3 text-center">
-                            <img src="assets/mail/lunar_tech.png" alt="lunar_tech" class="img-fluid mb-5" title="AGH Lunar Tech">
+                            <img src="assets/mail/lunar_tech.png" alt="lunar_tech" class="img-fluid mb-5"
+                                title="AGH Lunar Tech">
                         </div>
                         <div class="col-6 col-md-3 text-center">
-                            <img src="assets/mail/spacelocker.png" alt="space_locker" class="img-fluid mb-5" title="Space Locker">
+                            <img src="assets/mail/spacelocker.png" alt="space_locker" class="img-fluid mb-5"
+                                title="Space Locker">
                         </div>
                     </div>
                 </div>
@@ -147,78 +151,59 @@
             </div>
         </div>
     </section>
-    <section class="contact-section bg-black" id="contact">
-        <div class="container px-4 px-lg-5">
-            <h2 class="text-white mb-5 text-center">Our team</h2>
-            <div class="container py-5">
-                <div class="row justify-content-center text-white text-center">
-                    <div class="col-6 col-md-4 col-lg-3 mb-4">
-                        <div class="position-relative w-100 mx-auto" style="max-width: 150px;">
-                            <img class="rounded-circle w-100 object-cover" src="assets/img/RR.png" alt="1">
-                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-circle"></div>
-                        </div>
-                        <p class=" mt-3 text-xl">Rafał Radomski</p>
-                        <p class="text-uppercase mt-1 text-sm">CEO</p>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 mb-4">
-                        <div class="position-relative w-100 mx-auto" style="max-width: 150px;">
-                            <img class="rounded-circle w-100 object-cover" src="assets/img/PS.png" alt="2">
-                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-circle"></div>
-                        </div>
-                        <p class="mt-3 text-xl">Paweł Skrzypek</p>
-                        <p class="text-uppercase mt-1 text-sm">CTO</p>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 mb-4">
-                        <div class="position-relative w-100 mx-auto" style="max-width: 150px;">
-                            <img class="rounded-circle w-100 object-cover" src="assets/img/RL.png" alt="3">
-                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-circle"></div>
-                        </div>
-                        <p class="mt-3 text-xl">Rene Laflamme</p>
-                        <p class="text-uppercase mt-1 text-sm">Embedded Software Architect</p>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 mb-4">
-                        <div class="position-relative w-100 mx-auto" style="max-width: 150px;">
-                            <img class="rounded-circle w-100 object-cover" src="assets/img/MS.png" alt="4">
-                            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-circle"></div>
-                        </div>
-                        <p class="mt-3 text-xl">Mateusz Sołtys</p>
-                        <p class="text-uppercase mt-1 font-weight-normal text-sm">Web Development Specialist</p>
-                    </div>
+    <section class="team-section-container">
+        <h2 class="team-section-title">Our team</h2>
+        <div class="team-grid">
+            <div class="team-avatar">
+                <img class="rounded-circle" src="assets/img/RR.png" alt="Rafał Radomski">
+                <p class="mt-3 text-xl">Rafał Radomski</p>
+                <p class="text-uppercase mt-1 text-sm">CEO</p>
+            </div>
+            <div class="team-avatar">
+                <img class="rounded-circle" src="assets/img/PS.png" alt="Paweł Skrzypek">
+                <p class="mt-3 text-xl">Paweł Skrzypek</p>
+                <p class="text-uppercase mt-1 text-sm">CTO</p>
+            </div>
+            <div class="team-avatar">
+                <img class="rounded-circle" src="assets/img/RL.png" alt="Rene Laflamme">
+                <p class="mt-3 text-xl">Rene Laflamme</p>
+                <p class="text-uppercase mt-1 text-sm">Embedded Software Architect</p>
+            </div>
+            <div class="team-avatar">
+                <img class="rounded-circle" src="assets/img/MS.png" alt="Mateusz Sołtys">
+                <p class="mt-3 text-xl">Mateusz Sołtys</p>
+                <p class="text-uppercase mt-1 text-sm">Web Development Specialist</p>
+            </div>
+            <!-- +4 Circle -->
+<div class="team-avatar">
+    <div class="team-more-avatar">+4</div>
+    <p class="mt-3 text-xl">More Developers</p>
+    <p class="text-uppercase mt-1 text-sm">&nbsp;</p>
+</div>
+        </div>
+        <div class="container">
+            <h2 class="text-white mb-5 text-center">Contact us!</h2>
+            <div class="contact-cards-grid">
+                <div class="content-card text-center">
+                    <i class="fas fa-envelope contact-card-icon"></i>
+                    <h3>Email</h3>
+                    <p>
+                        <a href="mailto:office@tatraspace.com" class="contact-card-link">
+                            office@tatraspace.com
+                        </a>
+                    </p>
+                </div>
+                <div class="content-card text-center">
+                    <i class="fas fa-calendar-alt contact-card-icon"></i>
+                    <h3>Set up a meeting</h3>
+                    <p>
+                        <a href="https://calendar.app.google/QdMjpUWR4NetgLWB8" target="_blank" rel="noopener"
+                            class="contact-card-btn">
+                            Book a meeting
+                        </a>
+                    </p>
                 </div>
             </div>
-
-        </div>
-<div class="container">
-    <h2 class="text-white mb-5 text-center">Contact us!</h2>
-    <div class="contact-cards-grid">
-        <div class="content-card text-center">
-            <i class="fas fa-envelope contact-card-icon"></i>
-            <h3>Email</h3>
-            <p>
-                <a href="mailto:office@tatraspace.com" class="contact-card-link">
-                    office@tatraspace.com
-                </a>
-            </p>
-        </div>
-        <div class="content-card text-center">
-            <i class="fas fa-calendar-alt contact-card-icon"></i>
-            <h3>Set up a meeting</h3>
-            <p>
-                <a href="https://calendar.app.google/QdMjpUWR4NetgLWB8"
-                   target="_blank"
-                   rel="noopener"
-                   class="contact-card-btn">
-                    Book a meeting
-                </a>
-            </p>
-        </div>
-    </div>
-</div>
-
-
-
-
-
         </div>
     </section>
     <footer class="footer-custom mt-5">

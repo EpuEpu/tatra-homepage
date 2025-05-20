@@ -484,10 +484,10 @@
     align-items: center;
     gap: 14px;
     text-decoration: none;
-    height: 48px;
+    height: 80px;
 }
 .wisent-navbar-logo-img {
-    height: 42px;
+    height: 80px !important;
     width: auto;
     display: block;
 }
