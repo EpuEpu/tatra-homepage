@@ -1,0 +1,323 @@
+        :root {
+            --background: #080808;
+            --accent-green: #ddfc76;
+            --accent-purple: #9576fc;
+            --text-primary: rgba(255, 255, 255, 0.9);
+            --text-secondary: rgba(255, 255, 255, 0.7);
+            --garet-font: 'Space Grotesk', sans-serif;
+            /* Alternative to Garet */
+            --telegraf-font: 'DM Sans', sans-serif;
+            /* Alternative to Telegraf */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            font-family: var(--telegraf-font);
+        }
+
+        .container-wisent {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 10rem 0;
+        }
+
+        header {
+            padding: 30px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo {
+            font-family: var(--garet-font);
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+
+        .logo-accent {
+            color: var(--accent-green);
+        }
+
+        /* Hero Section - New Layout */
+        .hero-section {
+            display: flex;
+            padding: 0 60px 60px 60px;
+            gap: 40px;
+        }
+
+        .hero-left {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .hero-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .main-title {
+            font-family: var(--garet-font);
+            font-size: 46px;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+            background: linear-gradient(to right, var(--text-primary), var(--text-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            letter-spacing: 0.2px;
+            line-height: 1.6;
+        }
+
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 12px;
+        }
+
+        /* Signup Form - Repositioned */
+        .signup-form-container {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .signup-form h3 {
+            margin-bottom: 20px;
+            font-family: var(--garet-font);
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-green);
+            text-shadow: 0 0 20px rgba(221, 252, 118, 0.3);
+        }
+
+        .form-control {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .form-control input {
+            flex: 1;
+            padding: 16px 24px;
+            background-color: rgba(255, 255, 255, 0.08);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px 0 0 8px;
+            color: var(--text-primary);
+            font-family: var(--telegraf-font);
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .form-control input:focus {
+            border-color: var(--accent-purple);
+            background-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .form-control button {
+            padding: 16px 32px;
+            background: linear-gradient(135deg, var(--accent-purple) 0%, rgba(149, 118, 252, 0.8) 100%);
+            color: white;
+            border: none;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+            font-family: var(--garet-font);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .form-control button:hover {
+            background: linear-gradient(135deg, var(--accent-purple) 20%, rgba(149, 118, 252, 1) 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(149, 118, 252, 0.3);
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(221, 252, 118, 0.3), transparent);
+            margin: 30px 0;
+            width: 100%;
+        }
+
+        /* Content Cards - More Compact */
+        .content-section {
+            padding: 20px 60px 60px 60px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .content-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        .content-card.wide {
+            grid-column: span 2;
+        }
+
+        .content-card.highlight-card {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(8, 8, 8, 0.5);
+            position: relative;
+            overflow: hidden;
+            font-size: 0.95em;
+            padding: 25px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .content-card.highlight-card::before {
+            display: none;
+        }
+
+        .content-card.highlight-card h3 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .content-card.highlight-card h3::after {
+            width: 40px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .content-card.highlight-card .highlight {
+            color: var(--accent-green);
+            font-weight: 500;
+            border-bottom: 1px dotted var(--accent-green);
+            font-style: normal;
+        }
+
+        .content-card h3 {
+            font-family: var(--garet-font);
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 16px;
+        }
+
+        .content-card h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, var(--accent-green), var(--accent-purple));
+        }
+
+        .content-card p {
+            margin-bottom: 15px;
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .highlight {
+            color: var(--accent-purple);
+            font-style: italic;
+            font-weight: 600;
+            border-bottom: 2px dotted var(--accent-purple);
+            padding-bottom: 2px;
+        }
+
+        .accent-text {
+            color: var(--accent-green);
+        }
+
+        @media (max-width: 1100px) {
+            .hero-section {
+                flex-direction: column;
+                padding: 0 30px 40px 30px;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .content-card.wide {
+                grid-column: span 2;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 20px 30px;
+            }
+
+            .hero-section,
+            .content-section {
+                padding: 20px 30px;
+            }
+
+            .main-title {
+                font-size: 36px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .content-card {
+                padding: 25px;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .content-card.wide {
+                grid-column: span 1;
+            }
+        }

@@ -10994,76 +10994,63 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: none !important;
+  border-bottom: none;
+  padding-top: 0;
+  padding-bottom: 0;
 }
+
+/* Toggler (hamburger menu) */
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #bbaf9f;
-  border: 1px solid #bbaf9f;
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
+
 #mainNav .navbar-toggler:focus {
   outline: none;
 }
+
+/* Brand / Logo */
 #mainNav .navbar-brand {
-  color: #000;
+  color: #ffffff;
   font-weight: 700;
   padding: 0.9rem 0;
 }
-#mainNav .navbar-nav .nav-item:hover {
-  color: fade(#fff, 80%);
-  outline: none;
-  background-color: transparent;
+
+/* Navigation links */
+#mainNav .nav-link {
+  padding: 2rem 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  transition: none;
 }
-#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
-  outline: none;
-  background-color: transparent;
+
+#mainNav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.85);
 }
-@media (min-width: 992px) {
-  #mainNav {
-    padding-top: 0;
-    padding-bottom: 0;
-    border-bottom: none;
-    background-color: transparent;
-    transition: background-color 0.3s ease-in-out;
-  }
-  #mainNav .navbar-brand {
-    padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.5);
-  }
-  #mainNav .nav-link {
-    transition: none;
-    padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
-  }
-  #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
-  }
-  #mainNav .nav-link:active {
-    color: #fff;
-  }
-  #mainNav.navbar-shrink {
-    background-color: #fff;
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    color: #000;
-  }
-  #mainNav.navbar-shrink .nav-link {
-    color: #000;
-    padding: 1.5rem 1.5rem 1.25rem;
-    border-bottom: 0.25rem solid transparent;
-  }
-  #mainNav.navbar-shrink .nav-link:hover {
-    color: #bbaf9f;
-  }
-  #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
-  }
-  #mainNav.navbar-shrink .nav-link.active {
-    color: #bbaf9f;
-    outline: none;
-    border-bottom: 0.25rem solid #bbaf9f;
-  }
+
+#mainNav .nav-link:active,
+#mainNav .nav-link:focus {
+  color: #ffffff;
+  outline: none;
+}
+
+/* Remove all shrinking behavior */
+#mainNav.navbar-shrink,
+#mainNav.navbar-shrink .navbar-brand,
+#mainNav.navbar-shrink .nav-link,
+#mainNav.navbar-shrink .nav-link:hover,
+#mainNav.navbar-shrink .nav-link:active,
+#mainNav.navbar-shrink .nav-link.active {
+  all: unset;
+}
+
+#mainNav.navbar-shrink {
+  all: unset;
 }
 
 .btn {
@@ -11082,7 +11069,6 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/glitter.webp");
   /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%); */
   background-position: center;
   background-repeat: no-repeat;
@@ -11300,6 +11286,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
   color: var(--text-primary);
   font-family: var(--telegraf-font);
+  padding: 10rem 0 !important;
 }
 
 .page-title {
@@ -11318,6 +11305,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
   color: var(--text-primary);
   font-family: var(--telegraf-font);
+  padding: 10rem 0 !important;
 }
 
 .page-title {
@@ -11344,4 +11332,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .privacy-page a:hover {
   color: var(--accent-green);
+}
+
+.blur-navbar {
+  background-color: rgba(0, 0, 0, 0.7); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-link img {
+  pointer-events: auto !important;
 }
