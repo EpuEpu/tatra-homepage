@@ -18,22 +18,19 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top blur-navbar" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <img class="navbar-brand img-navbar" src="/assets/img/output_white_image.png" alt="TatraSpace Logo" />
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                Menu
+    <nav class="wisent-navbar">
+        <div class="wisent-navbar-inner">
+            <a href="/" class="wisent-navbar-logo-link">
+                <img src="/assets/img/output_white_image.png" alt="TatraSpace Logo" class="wisent-navbar-logo-img" />
+            </a>
+            <button class="wisent-navbar-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.wisent-navbar-links').classList.toggle('open')">
                 <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/wisent-wire/">Our product</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/#about">About us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
-                </ul>
+            <div class="wisent-navbar-links">
+                <a class="wisent-navbar-link" href="/wisent-wire/">Our product</a>
+                <a class="wisent-navbar-link" href="/#about">About us</a>
+                <a class="wisent-navbar-link" href="/#services">Services</a>
+                <a class="wisent-navbar-link" href="/#contact">Contact</a>
             </div>
         </div>
     </nav>
@@ -207,7 +204,7 @@
             <i class="fas fa-calendar-alt contact-card-icon"></i>
             <h3>Set up a meeting</h3>
             <p>
-                <a href="https://calendly.com/your-company/meeting"
+                <a href="https://calendar.app.google/QdMjpUWR4NetgLWB8"
                    target="_blank"
                    rel="noopener"
                    class="contact-card-btn">
