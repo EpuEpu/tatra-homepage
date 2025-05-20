@@ -11305,7 +11305,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
   color: var(--text-primary);
   font-family: var(--telegraf-font);
-  padding: 10rem 0 !important;
+  padding: 5rem 0 !important;
 }
 
 .page-title {
@@ -11344,4 +11344,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo-link img {
   pointer-events: auto !important;
+}
+
+h2, h3, h4 {
+  scroll-margin-top: 4rem;
 }
